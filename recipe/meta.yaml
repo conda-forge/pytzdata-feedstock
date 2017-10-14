@@ -1,18 +1,16 @@
-{% set name = "pytzdata" %}
-{% set version = "2017.2" %}
-{% set sha256 = "a4d11b8123d00e947fac88508292b9e148da884fc64b884d9da3897a35fa2ab0" %}
+{% set version = "2017.2.2" %}
 
 package:
-  name: {{ name|lower }}
+  name: pytzdata
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/p/pytzdata/pytzdata-{{ version }}.tar.gz
+  sha256: 141c539a6b3f6040ca4728f8a85df598f60adccdfbab3ac1efe110934ce4a331
 
 build:
   number: 0
+  noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -36,3 +34,4 @@ about:
 extra:
   recipe-maintainers:
     - mcs07
+    - ocefpaf
