@@ -1,4 +1,4 @@
-{% set version = "2017.3" %}
+{% set version = "2017.3.1" %}
 
 package:
   name: pytzdata
@@ -6,17 +6,17 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pytzdata/pytzdata-{{ version }}.tar.gz
-  sha256: 1bae4bb50b6be6e9120d73f7366139c0e33d40d230bbace7138490017308ab7b
+  sha256: e87376f2ee7cb89af5ddea5ed07ce3e98a55f891d07ae87d8c49e99f069423f2
 
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
 
