@@ -1,4 +1,4 @@
-{% set version = "2018.4" %}
+{% set version = "2018.5" %}
 
 package:
   name: pytzdata
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pytzdata/pytzdata-{{ version }}.tar.gz
-  sha256: 33456d0c1a9f6dc103749b3a00099a8b5bfea9d1c292526ec3dffe5c7df1f752
+  sha256: e4ef42e82b0b493c5849eed98b5ab49d6767caf982127e9a33167f1153b36cc5
 
 build:
   number: 0
