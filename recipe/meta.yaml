@@ -28,7 +28,6 @@ about:
   home: https://github.com/sdispater/pytzdata
   license: MIT
   license_family: MIT
-  license_file: LICENSE
   summary: 'Official timezone database for Python'
 
 extra:
