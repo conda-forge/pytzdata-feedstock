@@ -14,12 +14,15 @@ Summary: Official timezone database for Python
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pytzdata-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pytzdata-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pytzdata-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pytzdata-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytzdata/badges/version.svg)](https://anaconda.org/conda-forge/pytzdata)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytzdata/badges/downloads.svg)](https://anaconda.org/conda-forge/pytzdata)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pytzdata-green.svg)](https://anaconda.org/conda-forge/pytzdata) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pytzdata.svg)](https://anaconda.org/conda-forge/pytzdata) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pytzdata.svg)](https://anaconda.org/conda-forge/pytzdata) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pytzdata.svg)](https://anaconda.org/conda-forge/pytzdata) |
 
 Installing pytzdata
 ===================
