@@ -1,4 +1,4 @@
-{% set version = "2018.7" %}
+{% set version = "2018.9" %}
 
 package:
   name: pytzdata
@@ -6,16 +6,17 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pytzdata/pytzdata-{{ version }}.tar.gz
-  sha256: 10c74b0cfc51a9269031f86ecd11096c9c6a141f5bb15a3b8a88f9979f6361e2
+  sha256: dddaaf4f1717820a6fdcac94057e03c1a15b3829a44d9eaf19988917977db408
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python
+    - poetry
     - pip
   run:
     - python
@@ -28,6 +29,7 @@ about:
   home: https://github.com/sdispater/pytzdata
   license: MIT
   license_family: MIT
+  license_file: LICENSE
   summary: 'Official timezone database for Python'
 
 extra:
